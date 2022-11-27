@@ -1,0 +1,91 @@
+:root .char-index-0 {
+  --char-index: 0;
+}
+:root .char-index-1 {
+  --char-index: 1;
+}
+:root .char-index-2 {
+  --char-index: 2;
+}
+:root .char-index-3 {
+  --char-index: 3;
+}
+:root .char-index-4 {
+  --char-index: 4;
+}
+:root .char-index-5 {
+  --char-index: 5;
+}
+:root .char-index-6 {
+  --char-index: 6;
+}
+:root .char-index-7 {
+  --char-index: 7;
+}
+:root .char-index-8 {
+  --char-index: 8;
+}
+:root .char-index-9 {
+  --char-index: 9;
+}
+:root .char-index-10 {
+  --char-index: 10;
+}
+:root .char-index-11 {
+  --char-index: 11;
+}
+:root .char-index-12 {
+  --char-index: 12;
+}
+
+/* char total */
+:root .char-total-12 {
+  --char-total: 12;
+}
+:root .word-index-0 {
+  --word-index: 0;
+}
+
+.char {
+  white-space: pre;
+}
+/* .position-relative {
+  position: relative;
+}
+.pageArrow {
+  margin-left: 25px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  content: "\f078";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 34px;
+  line-height: 34px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  opacity: 0;
+}
+@media screen and (max-width: 1024px) {
+  .pageArrow {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pageArrow {
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+} */

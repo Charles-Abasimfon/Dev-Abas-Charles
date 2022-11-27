@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"index.js -> ../src/components/ProjectIsotop":{"id":"index.js -> ../src/components/ProjectIsotop","files":["static/chunks/src_components_ProjectIsotop_js.js"]}}
