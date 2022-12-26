@@ -1,28 +1,28 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from 'react';
 import {
   animation,
   initCursor,
   parallax,
   splittingText,
   stickyNav,
-} from "../utils";
-import Footer from "./Footer";
-import Header from "./Header";
-import PreLoader from "./PreLoader";
+} from '../utils';
+import Footer from './Footer';
+import Header from './Header';
+import PreLoader from './PreLoader';
 const Layout = ({ children, extraWrapClass }) => {
   useEffect(() => {
     initCursor();
     animation();
-    window.addEventListener("scroll", stickyNav);
+    window.addEventListener('scroll', stickyNav);
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
-      const srollAnimation = document.querySelectorAll(".scroll-animate");
+      const srollAnimation = document.querySelectorAll('.scroll-animate');
       srollAnimation.forEach((element) => {
         const elementHeight = element.offsetHeight;
         const width = window.scrollY;
-        element.classList.add("animate__active", "animate__animated");
+        element.classList.add('animate__active', 'animate__animated');
       });
     }, 500);
   }, []);
@@ -32,19 +32,21 @@ const Layout = ({ children, extraWrapClass }) => {
     parallax();
   }, []);
 
+  const [day, setDay] = useState(true);
+
   return (
     <Fragment>
-      <div className="container-page ">
+      <div className='container-page '>
         {/* Preloader */}
-        <PreLoader />
+        <PreLoader day={day} setDay={setDay} />
         {/* Header */}
-        <Header />
+        <Header day={day} setDay={setDay} />
         {/* Wrapper */}
         <div className={`wrapper ${extraWrapClass}`}>{children}</div>
         {/* Footer */}
         <Footer />
       </div>
-      <div className="cursor"></div>
+      <div className='cursor'></div>
     </Fragment>
   );
 };
