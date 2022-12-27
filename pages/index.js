@@ -102,18 +102,49 @@ const Index = () => {
               </div>
               <div className='description'>
                 <p>
-                  I am UI/UX Designer based in New York and enjoy playing with
-                  colors. I love travelling, photography &amp; music.
+                  I am an Expert Full-Stack Website & Mobile App Developer and
+                  Designer with over 13 years of experience in designing and
+                  developing outstanding production-ready websites, applications
+                  and other software for clients from different backgrounds.
                 </p>
+
                 <div className='social-links'>
-                  <a target='_blank' rel='noreferrer' href='#'>
-                    <i aria-hidden='true' className='fab fa-twitter' />
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://www.upwork.com/fl/charlesabas'
+                  >
+                    <img
+                      src='https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-logo-shadow-tal-revivo.png'
+                      style={{ width: '30px', marginTop: '-5px' }}
+                      alt='Abasimfon Charles | Upwork Profile'
+                    />
                   </a>
-                  <a target='_blank' rel='noreferrer' href='#'>
-                    <i aria-hidden='true' className='fab fa-dribbble' />
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://www.linkedin.com/in/abascharles'
+                  >
+                    <img
+                      src='https://img.icons8.com/color/512/linkedin.png'
+                      style={{ width: '30px', marginTop: '-5px' }}
+                      alt='Abasimfon Charles | LinkedIn Profile'
+                    />
                   </a>
-                  <a target='_blank' rel='noreferrer' href='#'>
-                    <i aria-hidden='true' className='fab fa-behance' />
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://github.com/Charles-Abasimfon'
+                  >
+                    <img
+                      src='https://img.icons8.com/sf-black-filled/512/github.png'
+                      style={{
+                        width: '40px',
+                        marginTop: '-7px',
+                        marginLeft: '-5px',
+                      }}
+                      alt='Abasimfon Charles | GitHub Profile'
+                    />
                   </a>
                 </div>
               </div>
