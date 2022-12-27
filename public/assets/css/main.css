@@ -2613,6 +2613,7 @@ body.light-skin .header.sticky .navbar.default:before {
   font-size: 18px;
   color: #91959b;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .history-item .name {
