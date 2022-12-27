@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ContactForm from '../src/components/ContactForm';
 import TestimonialSlider from '../src/components/TestimonialSlider';
 import Layout from '../src/layout/Layout';
+import homepreviewimg from '../public/assets/images/homepreviewimg.jpg';
 
 const ProjectIsotop = dynamic(() => import('../src/components/ProjectIsotop'), {
   ssr: false,
@@ -14,7 +15,7 @@ const Index = () => {
       pageDescription='I am an Expert Full-Stack Website & Mobile App Developer and Designer with many years of experience in designing and developing outstanding production-ready websites, applications and other software for different industries, brands and businesses.'
       siteName='Abasimfon Charles'
       pageUrl='https://www.devabascharles.com'
-      previewImage={'assets/images/home-preview-img.jpg'}
+      previewImage={homepreviewimg}
       twitterHandle='@charleey_ab'
     >
       <section className='section section-started'>
