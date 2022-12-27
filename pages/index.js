@@ -238,10 +238,7 @@ const Index = () => {
                     deliver high-end professional solutions. If you’re
                     interested in working with me, send me a message and watch
                     your vision turn into a highly functional
-                    website/application. I am also a great team player, ready to
-                    jump in and familiarize with any infrastructure and team,
-                    from simple to very complex. I’m looking forward to working
-                    with you or your team.
+                    website/application.
                   </p>
                   <p>
                     I am also a great team player, ready to jump in and
