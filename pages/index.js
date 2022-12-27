@@ -14,7 +14,7 @@ const Index = () => {
       pageDescription='I am an Expert Full-Stack Website & Mobile App Developer and Designer with many years of experience in designing and developing outstanding production-ready websites, applications and other software for different industries, brands and businesses.'
       siteName='Abasimfon Charles'
       pageUrl='https://www.devabascharles.com'
-      previewImage={'assets/images/home-preview-img.png'}
+      previewImage={'assets/images/home-preview-img.jpg'}
       twitterHandle='@charleey_ab'
     >
       <section className='section section-started'>
