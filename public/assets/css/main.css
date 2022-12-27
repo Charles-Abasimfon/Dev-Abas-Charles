@@ -2156,6 +2156,7 @@ body.light-skin .header.sticky .navbar.default:before {
   .p-title-gap {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 0px;
   }
 }
 

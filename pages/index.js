@@ -23,7 +23,7 @@ const Index = () => {
           {/* Hero Started */}
           <div className='hero-started'>
             <div className='slide'>
-              <img src='assets/images/profile.jpg' alt='' />
+              <img src='assets/images/profile.png' alt='' />
               <span className='circle circle-1'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -33,7 +33,7 @@ const Index = () => {
                 >
                   <path
                     fillRule='evenodd'
-                    fill='#ff8059'
+                    fill='#032074'
                     d='M749.000,0.000 C749.000,206.786 581.459,374.514 374.608,374.514 C167.758,374.514 -0.000,206.786 -0.000,0.000 '
                   />
                 </svg>
@@ -305,22 +305,6 @@ const Index = () => {
                   Ocean, etc.
                 </p>
               </div>
-              {/* Description */}
-              <div className='text'>
-                <div className='p-title'>WHY I'M PREFERRED?</div>
-
-                <p>
-                  Asides creating an engaging and interactive website/app with a
-                  great UI/UX, I can host your website or web application online
-                  from Day 1 so you can track my daily progress and request for
-                  changes, if any, in real time. I also prioritize speed,
-                  responsiveness on multiple screens (mobile friendly),
-                  security, easy navigation, scalability, WCAG compliance,
-                  search engine optimization (SEO), clean code architecture. I
-                  am also available post project completion to provide technical
-                  support and revisions.
-                </p>
-              </div>
 
               {/* Services */}
               <div className='p-title'>SERVICES</div>
@@ -511,7 +495,7 @@ const Index = () => {
               <div className='history-right'>
                 <div className='history-items'>
                   <div className='p-title-gap'>-</div>
-                  <div className='history-item'>
+                  <div className='history-item' style={{ marginTop: '0px' }}>
                     <div className='date'>May 11, 2020</div>
                     <div className='name'>
                       JavaScript Algorithms and Data Structures
