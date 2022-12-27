@@ -182,61 +182,9 @@ const Header = ({ day, setDay }) => {
                       </a>
                     </li>
                     <li className='menu-item'>
-                      <a href='/#pricing-section' onClick={() => linkClick()}>
-                        Pricing
-                      </a>
-                    </li>
-                    <li className='menu-item'>
-                      <a href='/#blog-section' onClick={() => linkClick()}>
-                        Blog
-                      </a>
-                    </li>
-                    <li className='menu-item'>
                       <a href='/#contact-section' onClick={() => linkClick()}>
                         Contact
                       </a>
-                    </li>
-                    <li className='menu-item menu-item-has-children has-children'>
-                      <a
-                        className='position-relative'
-                        onClick={() => setPageToggle(!pageToggle)}
-                      >
-                        <span>Pages</span>
-                        <i className='fas fa-chevron-down pageArrow'></i>
-                      </a>
-                      <ul
-                        className='sub-menu'
-                        style={{
-                          marginTop: '1rem',
-                          display: `${pageToggle ? 'block' : 'none'}`,
-                        }}
-                      >
-                        <li className='menu-item'>
-                          <Link href='/works'>
-                            <a onClick={() => linkClick()}>Works (grid)</a>
-                          </Link>
-                        </li>
-                        <li className='menu-item'>
-                          <Link href='/works-list'>
-                            <a onClick={() => linkClick()}>Works (list)</a>
-                          </Link>
-                        </li>
-                        <li className='menu-item'>
-                          <Link href='/work-single'>
-                            <a onClick={() => linkClick()}>Work Single Page</a>
-                          </Link>
-                        </li>
-                        <li className='menu-item'>
-                          <Link href='/blog'>
-                            <a onClick={() => linkClick()}>Blog Posts</a>
-                          </Link>
-                        </li>
-                        <li className='menu-item'>
-                          <Link href='/blog-single'>
-                            <a onClick={() => linkClick()}>Blog Single Post</a>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -246,14 +194,72 @@ const Header = ({ day, setDay }) => {
         </div>
         {/* social */}
         <div className='menu-social-links'>
-          <a href='http://dribbble.com' target='blank' title='dribbble'>
-            <i className='fab fa-dribbble' />
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.upwork.com/fl/charlesabas'
+          >
+            <img
+              src='https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-logo-shadow-tal-revivo.png'
+              style={{ width: '30px', marginTop: '-5px' }}
+              alt='Abasimfon Charles | Upwork Profile'
+            />
           </a>
-          <a href='http://twitter.com' target='blank' title='twitter'>
-            <i className='fab fa-twitter' />
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.linkedin.com/in/abascharles'
+          >
+            <img
+              src='https://img.icons8.com/color/512/linkedin.png'
+              style={{ width: '30px', marginTop: '-5px' }}
+              alt='Abasimfon Charles | LinkedIn Profile'
+            />
           </a>
-          <a href='http://behance.com' target='blank' title='behance'>
-            <i className='fab fa-behance' />
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://github.com/Charles-Abasimfon'
+          >
+            <img
+              src='https://img.icons8.com/sf-black-filled/512/github.png'
+              style={{
+                width: '40px',
+                marginTop: '-7px',
+                marginLeft: '-5px',
+              }}
+              alt='Abasimfon Charles | GitHub Profile'
+            />
+          </a>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://wa.me/qr/WZKPGKEETYXOJ1'
+          >
+            <img
+              src='https://img.icons8.com/fluency/512/whatsapp.png'
+              style={{
+                width: '40px',
+                marginTop: '-7px',
+                marginLeft: '-5px',
+              }}
+              alt='Abasimfon Charles | WhatsApp Chat'
+            />
+          </a>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='mailto:devabascharles@gmail.com'
+          >
+            <img
+              src='https://img.icons8.com/fluency/512/gmail.png'
+              style={{
+                width: '40px',
+                marginTop: '-7px',
+                marginLeft: '-5px',
+              }}
+              alt='Abasimfon Charles | Send me an Email'
+            />
           </a>
         </div>
       </div>
