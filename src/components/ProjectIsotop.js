@@ -93,7 +93,9 @@ const ProjectIsotop = () => {
                     </span>
                   </span>
                   <span className='desc'>
-                    <span className='name'>Admin Dashboard</span>
+                    <span className='name'>
+                      TopTier Branding Agency Admin Dashboard
+                    </span>
                     <span className='category'>
                       Developed with ReactJS, NodeJS. This is a dashboard for a
                       digital agency to manage jobs, records and communicate in
