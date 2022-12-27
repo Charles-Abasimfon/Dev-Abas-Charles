@@ -35,7 +35,8 @@
 **/
 
 :root {
-  --secondary: #042698;
+  --primary: #042698;
+  --secondary: #7fcafa;
   --light-skin: #fff;
   --secondary-skin: #f7f8fd;
   --primary-font: 'Outfit', sans-serif;
