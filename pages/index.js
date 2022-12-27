@@ -8,6 +8,7 @@ import homepreviewimg from '../public/assets/images/homemetaimage.jpg';
 const ProjectIsotop = dynamic(() => import('../src/components/ProjectIsotop'), {
   ssr: false,
 });
+
 const Index = () => {
   return (
     <Layout
@@ -177,20 +178,10 @@ const Index = () => {
                 </div>
                 <div className='numbers-item'>
                   <div className='icon'>
-                    <i aria-hidden='true' className='far fa-smile-beam' />
+                    <i aria-hidden='true' className='fa fa-award' />
                   </div>
-                  <div className='num'>38</div>
+                  <div className='num'>32+</div>
                   <div className='title'>Certificates</div>
-                </div>
-                <div className='numbers-item'>
-                  <div className='icon'>
-                    <i aria-hidden='true' className='far fa-gem' />
-                  </div>
-                  <div className='num'>18</div>
-                  <div className='title'>
-                    Awards <br />
-                    Won
-                  </div>
                 </div>
               </div>
             </div>
@@ -370,6 +361,34 @@ const Index = () => {
                 <div className='history-items'>
                   <div className='p-title'>CERTIFICATES</div>
                   <div className='history-item'>
+                    <div className='date'>2021</div>
+                    <div className='name'>
+                      Upwork Top Rated Developer Status
+                    </div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by Upwork </span>
+                      <img
+                        src='https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-logo-shadow-tal-revivo.png'
+                        style={{ width: '20px' }}
+                        alt='Abasimfon Charles | Upwork Profile'
+                      />
+                    </div>
+                    <a
+                      href='https://www.upwork.com/freelancers/charlesabas'
+                      className='lnk'
+                      target='_blank'
+                    >
+                      view certificate
+                    </a>
+                  </div>
+                  <div className='history-item'>
                     <div className='date'>April 30, 2020</div>
                     <div className='name'>Responsive Web Design</div>
                     <div
@@ -386,6 +405,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/responsive-web-design'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -407,6 +427,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/full-stack'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -430,6 +451,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/information-security-and-quality-assurance'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -451,6 +473,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/back-end-development-and-apis'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -472,6 +495,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/data-visualization'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -500,6 +524,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/javascript-algorithms-and-data-structures'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -521,6 +546,7 @@ const Index = () => {
                     <a
                       href='https://www.freecodecamp.org/certification/charles_abas/front-end-development-libraries'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -542,6 +568,7 @@ const Index = () => {
                     <a
                       href='https://drive.google.com/file/d/10uwIQy5f3uxc2sLZlc6Cim8Os8U65H65/view?usp=sharing'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -563,6 +590,7 @@ const Index = () => {
                     <a
                       href='https://drive.google.com/file/d/10xmErZSyLcG-V7oKaRsXRknnHXsejWxq/view?usp=sharing'
                       className='lnk'
+                      target='_blank'
                     >
                       view certificate
                     </a>
@@ -585,7 +613,7 @@ const Index = () => {
         <div className='container'>
           {/* Section Heading */}
           <div className='m-titles'>
-            <h2 className='m-title'>My Projects</h2>
+            <h2 className='m-title'>Recent Projects</h2>
           </div>
           <div className='row row-custom'>
             <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3'></div>
@@ -593,85 +621,27 @@ const Index = () => {
               {/* Description */}
               <div className='text'>
                 <p>
-                  A Collection of my favorites project I’ve designed recently.
-                  Feeling great while sharing here.
+                  Few of my recent projects (excluding projects where I signed a
+                  Non-Disclosure Agreement - NDA).
                 </p>
               </div>
             </div>
           </div>
           {/* Works */}
           <ProjectIsotop />
-        </div>
-      </section>
-      <section className='section' id='pricing-section'>
-        <div className='container'>
-          {/* Section Heading */}
-          <div className='m-titles'>
-            <h2 className='m-title'>Pricing Plans</h2>
-          </div>
-          <div className='row row-custom'>
+          <div className='row row-custom' style={{ marginTop: '60px' }}>
             <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3'></div>
             <div className='col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line'>
-              {/* Description */}
               <div className='text'>
                 <p>
-                  Are you interested to work with me ? Here are my price list
-                  for design related work. Lets talk about project !
+                  I'd need to implement a really long infinite scroll if I were
+                  to display all my past projects here, lol :).
+                  <br />
+                  For now, Wanna see more?
                 </p>
-              </div>
-            </div>
-          </div>
-          {/* Pricing */}
-          <div className='pricing-items row'>
-            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4'>
-              <div className='pricing-item'>
-                <div className='title'>Full Time</div>
-                <div className='subtitle'>Available for Full Time</div>
-                <div className='price'>$1200</div>
-                <div className='text'>
-                  <ul>
-                    <li>Brand Design</li>
-                    <li>Advertising</li>
-                    <li>Web Development</li>
-                    <li>Photography</li>
-                  </ul>
-                </div>
+                {/* Request for More */}
                 <a href='#contact-section' className='btn'>
-                  <span>Hire Me</span>
-                </a>
-              </div>
-            </div>
-            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4'>
-              <div className='pricing-item'>
-                <div className='title'>Project Wise</div>
-                <div className='subtitle'>Available for Freelancing</div>
-                <div className='price'>$400</div>
-                <div className='text'>
-                  <ul>
-                    <li>Brand Design</li>
-                    <li>Advertising</li>
-                    <li>Web Development</li>
-                    <li>Photography</li>
-                  </ul>
-                </div>
-                <a href='#contact-section' className='btn'>
-                  <span>Hire Me</span>
-                </a>
-              </div>
-            </div>
-            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4'>
-              <div className='pricing-item'>
-                <div className='title'>Hourley</div>
-                <div className='subtitle'>Available for Hourley Basis</div>
-                <div className='price'>$60</div>
-                <div className='text'>
-                  <ul>
-                    <li>Brand Design</li> <li>Advertising</li>
-                    <li>Web Development</li> <li>Photography</li>
-                  </ul>
-                </div>
-                <a href='#contact-section' className='btn'>
-                  <span>Hire Me</span>
+                  <span>Request for more Past Projects</span>
                 </a>
               </div>
             </div>
@@ -682,186 +652,6 @@ const Index = () => {
         <div className='container'>
           {/* Testimonials */}
           <TestimonialSlider />
-        </div>
-      </section>
-      <section className='section section-bg' id='blog-section'>
-        <div className='container'>
-          {/* Section Heading */}
-          <div className='m-titles'>
-            <h2 className='m-title'>My Blog</h2>
-          </div>
-          <div className='row row-custom'>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3'></div>
-            <div className='col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line'>
-              {/* Description */}
-              <div className='text'>
-                <p>
-                  Suspendisse potenti. Sed egestas eros eu libero posuere
-                  ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Blog */}
-        <div className='blog-items'>
-          <div className='archive-item'>
-            <div className='image'>
-              <Link href='/blog-single'>
-                <a>
-                  <img
-                    src='assets/images/blog4.jpg'
-                    alt='Usability Secrets to Create Better User Interfaces'
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className='desc'>
-              <div className='category'>
-                UI Design
-                <br />
-                <span>November 28, 2021</span>
-              </div>
-              <h3 className='title'>
-                <Link href='/blog-single'>
-                  <a>Usability Secrets to Create Better User Interfaces</a>
-                </Link>
-              </h3>
-              <div className='text'>
-                <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget…{' '}
-                </p>
-                <div className='readmore'>
-                  <Link href='/blog-single'>
-                    <a className='lnk'>Read more</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='archive-item'>
-            <div className='image'>
-              <Link href='/blog-single'>
-                <a>
-                  <img
-                    src='assets/images/blog3.jpg'
-                    alt='Three Ways To Level Up Your Photography'
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className='desc'>
-              <div className='category'>
-                Branding
-                <br />
-                <span>November 28, 2021</span>
-              </div>
-              <h3 className='title'>
-                <Link href='/blog-single'>
-                  <a>Three Ways To Level Up Your Photography</a>
-                </Link>
-              </h3>
-              <div className='text'>
-                <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget…{' '}
-                </p>
-                <div className='readmore'>
-                  <Link href='/blog-single'>
-                    <a className='lnk'>Read more</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='archive-item'>
-            <div className='image'>
-              <Link href='/blog-single'>
-                <a>
-                  <img
-                    src='assets/images/single7.jpg'
-                    alt='10 Useful Tips to Improve Your UI Designs'
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className='desc'>
-              <div className='category'>
-                Photography
-                <br />
-                <span>November 28, 2021</span>
-              </div>
-              <h3 className='title'>
-                <Link href='/blog-single'>
-                  <a>10 Useful Tips to Improve Your UI Designs</a>
-                </Link>
-              </h3>
-              <div className='text'>
-                <p>
-                  Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                  mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
-                  arcu lacus, ornare eget…
-                </p>
-                <div className='readmore'>
-                  <Link href='/blog-single'>
-                    <a className='lnk'>Read more</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='blog-more-link'>
-          <Link href='/blog'>
-            <a className='btn'>
-              <span>View Blog</span>
-            </a>
-          </Link>
-        </div>
-      </section>
-      <section className='section section-parallax section-parallax-5'>
-        <div className='container'>
-          {/* Section Heading */}
-          <div className='m-titles'>
-            <h2 className='m-title'>My Clients</h2>
-          </div>
-          <div className='row row-custom'>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3'></div>
-            <div className='col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line'>
-              {/* Description */}
-              <div className='text'>
-                <p>
-                  Suspendisse potenti. Sed egestas eros eu libero posuere
-                  ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className='row clients-items'>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3 align-center'>
-              <div className='clients-item'>
-                <img src='assets/images/brand1.png' alt='' />
-              </div>
-            </div>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3 align-center'>
-              <div className='clients-item'>
-                <img src='assets/images/brand2.png' alt='' />
-              </div>
-            </div>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3 align-center'>
-              <div className='clients-item'>
-                <img src='assets/images/brand3.png' alt='' />
-              </div>
-            </div>
-            <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3 align-center'>
-              <div className='clients-item'>
-                <img src='assets/images/brand4.png' alt='' />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <ContactForm />
