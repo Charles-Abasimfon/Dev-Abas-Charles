@@ -80,20 +80,6 @@ const Index = () => {
                   />
                 </svg>
               </span>
-              <span className='circle circle-5'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  xmlnsXlink='http://www.w3.org/1999/xlink'
-                  width='232px'
-                  height='117px'
-                >
-                  <path
-                    fillRule='evenodd'
-                    fill='rgb(255, 208, 65)'
-                    d='M232.000,0.000 C232.000,64.151 180.376,116.580 116.238,116.580 C52.100,116.580 0.000,64.151 0.000,0.000 '
-                  />
-                </svg>
-              </span>
             </div>
             <div className='content'>
               <div className='titles'>
