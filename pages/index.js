@@ -1,9 +1,7 @@
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
 import ContactForm from '../src/components/ContactForm';
 import TestimonialSlider from '../src/components/TestimonialSlider';
 import Layout from '../src/layout/Layout';
-import homepreviewimg from '../public/assets/images/homemetaimage.jpg';
 
 const ProjectIsotop = dynamic(() => import('../src/components/ProjectIsotop'), {
   ssr: false,
@@ -131,6 +129,36 @@ const Index = () => {
                         marginLeft: '-5px',
                       }}
                       alt='Abasimfon Charles | GitHub Profile'
+                    />
+                  </a>
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://wa.me/qr/WZKPGKEETYXOJ1'
+                  >
+                    <img
+                      src='https://img.icons8.com/fluency/512/whatsapp.png'
+                      style={{
+                        width: '40px',
+                        marginTop: '-7px',
+                        marginLeft: '-5px',
+                      }}
+                      alt='Abasimfon Charles | WhatsApp Chat'
+                    />
+                  </a>
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='mailto:devabascharles@gmail.com'
+                  >
+                    <img
+                      src='https://img.icons8.com/fluency/512/gmail.png'
+                      style={{
+                        width: '40px',
+                        marginTop: '-7px',
+                        marginLeft: '-5px',
+                      }}
+                      alt='Abasimfon Charles | Send me an Email'
                     />
                   </a>
                 </div>

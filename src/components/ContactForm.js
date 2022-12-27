@@ -109,7 +109,7 @@ const ContactForm = () => {
                   )}
                 </label>
                 <a href='#' className='btn' onClick={(e) => onSubmit(e)}>
-                  Submit
+                  <span>Submit</span>
                 </a>
               </form>
             </div>
