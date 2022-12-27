@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ContactForm from '../src/components/ContactForm';
 import TestimonialSlider from '../src/components/TestimonialSlider';
 import Layout from '../src/layout/Layout';
+import homepreviewimg from '../public/assets/images/homepreviewimg.jpg';
 
 const ProjectIsotop = dynamic(() => import('../src/components/ProjectIsotop'), {
   ssr: false,
@@ -12,9 +13,9 @@ const Index = () => {
     <Layout
       pageTitle='Abasimfon Charles | FullStack Website & App Developer, Designer.'
       pageDescription='I am an Expert Full-Stack Website & Mobile App Developer and Designer with many years of experience in designing and developing outstanding production-ready websites, applications and other software for different industries, brands and businesses.'
-      siteName='Abasimfon Charles'
+      siteName='Abasimfon Charles | Dev. Abas Charles'
       pageUrl='https://www.devabascharles.com'
-      previewImage={'assets/images/home-preview-img.jpg'}
+      previewImage={homepreviewimg}
       twitterHandle='@charleey_ab'
     >
       <section className='section section-started'>
@@ -22,7 +23,7 @@ const Index = () => {
           {/* Hero Started */}
           <div className='hero-started'>
             <div className='slide'>
-              <img src='assets/images/profile.png' alt='' />
+              <img src='assets/images/profile.jpg' alt='' />
               <span className='circle circle-1'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -96,8 +97,8 @@ const Index = () => {
             </div>
             <div className='content'>
               <div className='titles'>
-                <div className='subtitle'>UI UX DESIGNER</div>
-                <h2 className='title'>Federico Ober</h2>
+                <div className='subtitle'>FULLSTACK DEVELOPER</div>
+                <h2 className='title'>Abas Charles</h2>
               </div>
               <div className='description'>
                 <p>
