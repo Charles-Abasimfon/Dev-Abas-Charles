@@ -1459,6 +1459,16 @@ body.light-skin .header.sticky .navbar.default:before {
   font-size: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .header .logo {
+    position: relative;
+    margin-right: 30px;
+    float: left;
+    width: 150px;
+    font-size: 0;
+  }
+}
+
 .header .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
