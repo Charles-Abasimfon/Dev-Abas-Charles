@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ContactForm from '../src/components/ContactForm';
 import TestimonialSlider from '../src/components/TestimonialSlider';
 import Layout from '../src/layout/Layout';
-import homepreviewimg from '../public/assets/images/homepreviewimg.jpg';
+import homepreviewimg from '../public/assets/images/homemetaimage.jpg';
 
 const ProjectIsotop = dynamic(() => import('../src/components/ProjectIsotop'), {
   ssr: false,
@@ -15,7 +15,7 @@ const Index = () => {
       pageDescription='I am an Expert Full-Stack Website & Mobile App Developer and Designer with many years of experience in designing and developing outstanding production-ready websites, applications and other software for different industries, brands and businesses.'
       siteName='Abasimfon Charles | Dev. Abas Charles'
       pageUrl='https://www.devabascharles.com'
-      previewImage={homepreviewimg}
+      previewImage='assets/images/homemetaimage.jpg'
       twitterHandle='@charleey_ab'
     >
       <section className='section section-started'>
@@ -152,13 +152,14 @@ const Index = () => {
             <div className='info-list'>
               <ul>
                 <li>
-                  Born in <strong>NewYork</strong>
+                  Language
+                  <strong>English</strong>
                 </li>
                 <li>
-                  Experience <strong>7+ Years</strong>
+                  Experience <strong>13+ Years</strong>
                 </li>
                 <li>
-                  Date of Birth <strong>27 June 1992</strong>
+                  Availability <strong>More than 30 hrs/week </strong>
                 </li>
               </ul>
             </div>
@@ -182,21 +183,18 @@ const Index = () => {
                   <div className='icon'>
                     <i aria-hidden='true' className='far fa-check-circle' />
                   </div>
-                  <div className='num'>124</div>
+                  <div className='num'>224+</div>
                   <div className='title'>
                     Completed <br />
-                    Project
+                    Projects
                   </div>
                 </div>
                 <div className='numbers-item'>
                   <div className='icon'>
                     <i aria-hidden='true' className='far fa-smile-beam' />
                   </div>
-                  <div className='num'>65</div>
-                  <div className='title'>
-                    Happy <br />
-                    Clients
-                  </div>
+                  <div className='num'>38</div>
+                  <div className='title'>Certificates</div>
                 </div>
                 <div className='numbers-item'>
                   <div className='icon'>
@@ -215,28 +213,40 @@ const Index = () => {
               <div className='profile-box'>
                 <div className='text'>
                   <p>
-                    My name is Federico Ober. I have been studying UI UX Design
-                    since October 2020. I like creating a cool design project.
+                    My name is Abasimfon Charles Ntuk (Abas Charles). Nice to
+                    meet you!
                   </p>
                   <p>
-                    Donec imperdiet risus at tortor consequat maximus et eget
-                    magna. Cras ornare sagittis augue, id sollicitudin justo
-                    tristique ut. Nullam ex enim, euismod vel bibendum ultrices,
-                    fringilla vel eros. Donec euismod leo lectus, et euismod
-                    metus euismod sed. Quisque quis suscipit ipsum, at
-                    pellentesque velit. Duis a congue sem.
+                    Since beginning my journey as a freelance FullStack
+                    Developer over 13 years ago, I've worked remotely for
+                    agencies, consulted for startups, and collaborated with
+                    talented people to create websites, applications and other
+                    software for both business and consumer use. I'm quietly
+                    confident, naturally curious, and perpetually working on
+                    changing the world, one project at a time.
                   </p>
                   <p>
-                    In sed dolor ut ligula malesuada sollicitudin. Morbi iaculis
-                    convallis arcu, nec maximus tellus sodales in. Curabitur
-                    blandit enim at nisl lobortis, non pretium enim hendrer
+                    Design and Development is not just my job, it's my passion
+                    and I pride myself in working hard and delivering the best
+                    results on time. While fulfilling my clients’ needs, I have
+                    strengthened my ability to understand custom needs and
+                    deliver high-end professional solutions. If you’re
+                    interested in working with me, send me a message and watch
+                    your vision turn into a highly functional
+                    website/application. I am also a great team player, ready to
+                    jump in and familiarize with any infrastructure and team,
+                    from simple to very complex. I’m looking forward to working
+                    with you or your team.
+                  </p>
+                  <p>
+                    I am also a great team player, ready to jump in and
+                    familiarize with any infrastructure and team, from simple to
+                    very complex. I’m looking forward to working with you or
+                    your team.
                   </p>
                   <a href='#contact-section' className='btn'>
-                    <span>Contact Me</span>
+                    <span>Start a Conversation</span>
                   </a>
-                  <div className='signature'>
-                    <img src='assets/images/signature.png' alt='' />
-                  </div>
                 </div>
               </div>
             </div>
@@ -255,121 +265,63 @@ const Index = () => {
           <div className='row row-custom'>
             <div className='col-xs-12 col-sm-12 col-md-3 col-lg-3'></div>
             <div className='col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line'>
-              {/* Description */}
-              <div className='text'>
-                <p>
-                  Talented UX designer with 7+ years of experience, seeking to
-                  elevate UI/UX at ABC, Inc. As Lead UI/UX Head completed
-                  project before dead line. ittis augue, id sollicitudin justo
-                  tristique ut. Nullam ex enim, euismod vel bibendum ultrices,
-                  fringilla vel eros. Donec euism od leo um, at pellentesque
-                  velituis a congue sem.
-                </p>
-              </div>
               {/* Skills */}
               <div className='skills-items'>
-                <div className='p-title'>SKILLS</div>
-                <div className='skills-item'>
-                  <div className='name'>Photoshop</div>
-                  <div className='dots dots-90'>
-                    <div className='dots-row'>
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                    </div>
-                  </div>
-                  <div className='value'>
-                    <span className='num'>90%</span>
-                  </div>
+                <div
+                  className='p-title'
+                  style={{ paddingTop: '0px', marginTop: '0px' }}
+                >
+                  SKILLS
                 </div>
-                <div className='skills-item'>
-                  <div className='name'>WordPress</div>
-                  <div className='dots dots-60'>
-                    <div className='dots-row'>
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                    </div>
-                  </div>
-                  <div className='value'>
-                    <span className='num'>60%</span>
-                  </div>
-                </div>
-                <div className='skills-item'>
-                  <div className='name'>HTML</div>
-                  <div className='dots dots-80'>
-                    <div className='dots-row'>
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                    </div>
-                  </div>
-                  <div className='value'>
-                    <span className='num'>80%</span>
-                  </div>
-                </div>
-                <div className='skills-item'>
-                  <div className='name'>Java</div>
-                  <div className='dots dots-50'>
-                    <div className='dots-row'>
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                    </div>
-                  </div>
-                  <div className='value'>
-                    <span className='num'>50%</span>
-                  </div>
-                </div>
-                <div className='skills-item'>
-                  <div className='name'>jQuery</div>
-                  <div className='dots dots-70'>
-                    <div className='dots-row'>
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                      <div className='dot' />
-                    </div>
-                  </div>
-                  <div className='value'>
-                    <span className='num'>70%</span>
-                  </div>
-                </div>
+                <p>
+                  <strong>Frontend:</strong> ReactJS, React Native, NextJS,
+                  Gatsby, JavaScript, jQuery, Redux, CSS & Sass, HTML, AJAX,
+                  Bootstrap, Tailwind CSS, JSX, Typescript, etc.
+                </p>
+                <p>
+                  <strong>Backend:</strong> NodeJS, Express, Strapi CMS, Rest
+                  api, etc.
+                </p>
+                <p>
+                  <strong>Database:</strong> MongoDB, MySQL, PostgreSQL, SQLite,
+                  DynamoBD, etc.
+                </p>
+                <p>
+                  <strong>Design Tools:</strong> Figma, Adobe XD, Adobe, etc.
+                </p>
+                <p>
+                  <strong>Dev. Tools:</strong> Git, Github, Gitlab, Bitbucket,
+                  Firebase, etc.
+                </p>
+                <p>
+                  <strong>CMS:</strong> WordPress Development (Custom Themes,
+                  Premium Themes, Page Builders like WPBakery and Elementor,
+                  Custom Plugins), Shopify, Squarespace, Web flow, Strapi CMS,
+                  etc.
+                </p>
+                <p>
+                  <strong>Deployment &amp; Hosting:</strong> AWS, Heroku,
+                  Docker, Vercel, Firebase, Netlify, cPanel, Cloudinary, Digital
+                  Ocean, etc.
+                </p>
               </div>
+              {/* Description */}
+              <div className='text'>
+                <div className='p-title'>WHY I'M PREFERRED?</div>
+
+                <p>
+                  Asides creating an engaging and interactive website/app with a
+                  great UI/UX, I can host your website or web application online
+                  from Day 1 so you can track my daily progress and request for
+                  changes, if any, in real time. I also prioritize speed,
+                  responsiveness on multiple screens (mobile friendly),
+                  security, easy navigation, scalability, WCAG compliance,
+                  search engine optimization (SEO), clean code architecture. I
+                  am also available post project completion to provide technical
+                  support and revisions.
+                </p>
+              </div>
+
               {/* Services */}
               <div className='p-title'>SERVICES</div>
               <div className='services-items'>
@@ -378,49 +330,50 @@ const Index = () => {
                     <div className='icon'>
                       <i aria-hidden='true' className='fab fa-chrome' />
                     </div>
-                    <div className='title'>Web development</div>
+                    <div className='title'>Website Development</div>
                     <div className='text'>
                       <p>
-                        Modern and mobile-ready website that will help you reach
-                        all of your marketing.
+                        I like to code and enjoy bringing ideas to life in the
+                        browser. I look at websites and web applications I
+                        developed and feel really good!.
                       </p>
                     </div>
                     <a href='#contact-section' className='lnk'>
-                      order now
+                      let's do this
                     </a>
                   </div>
                 </div>
                 <div className='services-col'>
                   <div className='services-item'>
                     <div className='icon'>
-                      <i aria-hidden='true' className='fab fa-soundcloud' />
+                      <i aria-hidden='true' className='fab fa-android' />
                     </div>
-                    <div className='title'>Music writing</div>
+                    <div className='title'>Mobile Application Development</div>
                     <div className='text'>
                       <p>
-                        Music copying, writing, creating, transcription and
-                        composition services.
+                        With React Native, I build cross-platform mobile
+                        applications for Android and iOS.
                       </p>
                     </div>
                     <a href='#contact-section' className='lnk'>
-                      order now
+                      let's do this
                     </a>
                   </div>
                 </div>
                 <div className='services-col'>
                   <div className='services-item'>
                     <div className='icon'>
-                      <i aria-hidden='true' className='fab fa-adversal' />
+                      <i aria-hidden='true' className='fa fa-cubes' />
                     </div>
-                    <div className='title'>Advetising</div>
+                    <div className='title'>Design</div>
                     <div className='text'>
                       <p>
-                        Advertising services include television, radio, print,
-                        mail, and web apps.
+                        I value clean design patterns, thoughtful interactions,
+                        perfect color blends.
                       </p>
                     </div>
                     <a href='#contact-section' className='lnk'>
-                      order now
+                      let's do this
                     </a>
                   </div>
                 </div>
@@ -432,12 +385,12 @@ const Index = () => {
                     <div className='title'>Game Development</div>
                     <div className='text'>
                       <p>
-                        Developing memorable and unique mobile android, ios and
-                        video games.
+                        I develop memorable and unique web games, simple android
+                        and ios games.
                       </p>
                     </div>
                     <a href='#contact-section' className='lnk'>
-                      order now
+                      let's do this
                     </a>
                   </div>
                 </div>
@@ -445,89 +398,211 @@ const Index = () => {
               {/* History */}
               <div className='history-left'>
                 <div className='history-items'>
-                  <div className='p-title'>EDUCATION</div>
+                  <div className='p-title'>CERTIFICATES</div>
                   <div className='history-item'>
-                    <div className='date'>2010 - 2012</div>
-                    <div className='name'>Master in Graphic</div>
-                    <div className='subname'>New York University</div>
-                  </div>
-                  <div className='history-item'>
-                    <div className='date'>2006 - 2009</div>
-                    <div className='name'>Bachelors of FineArt</div>
-                    <div className='subname'>New York University</div>
-                  </div>
-                </div>
-                <div className='history-items'>
-                  <div className='p-title'>AWARDS</div>
-                  <div className='history-item'>
-                    <div className='date'>2016 - awwwards</div>
-                    <div className='name'>Site of the Day</div>
-                    <div className='text'>
-                      <p>
-                        Euismod vel bibendum ultrices, fringilla vel eros, donec
-                        euismod leo lectus.
-                      </p>
+                    <div className='date'>April 30, 2020</div>
+                    <div className='name'>Responsive Web Design</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
                     </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/responsive-web-design'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
                   </div>
                   <div className='history-item'>
-                    <div className='date'>2015 - designnominees</div>
-                    <div className='name'>Site of the Week</div>
-                    <div className='text'>
-                      <p>
-                        Euismod vel bibendum ultrices, fringilla vel eros, donec
-                        euismod leo lectus.
-                      </p>
+                    <div className='date'>May 19, 2020</div>
+                    <div className='name'>Full Stack Development</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
                     </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/full-stack'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
+                  </div>
+                  <div className='history-item'>
+                    <div className='date'>May 27, 2020</div>
+                    <div className='name'>
+                      Information Security and Quality Assurance
+                    </div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
+                    </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/information-security-and-quality-assurance'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
+                  </div>
+                  <div className='history-item'>
+                    <div className='date'>May 22, 2020</div>
+                    <div className='name'>Back End Development and APIs</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
+                    </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/back-end-development-and-apis'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
+                  </div>
+                  <div className='history-item'>
+                    <div className='date'>May 19, 2020</div>
+                    <div className='name'>Data Visualization</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
+                    </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/data-visualization'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
                   </div>
                 </div>
               </div>
               <div className='history-right'>
                 <div className='history-items'>
-                  <div className='p-title'>EXPERIENCE</div>
+                  <div className='p-title-gap'>-</div>
                   <div className='history-item'>
-                    <div className='date'>2014 - Present</div>
-                    <div className='name'>Soft Tech Inc.</div>
-                    <div className='subname'>UI Head &amp; Manager</div>
-                    <div className='text'>
-                      <p>
-                        Euismod vel bibendum ultrices, fringilla vel eros, donec
-                        euismod leo lectus.
-                      </p>
+                    <div className='date'>May 11, 2020</div>
+                    <div className='name'>
+                      JavaScript Algorithms and Data Structures
                     </div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
+                    </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/javascript-algorithms-and-data-structures'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
                   </div>
                   <div className='history-item'>
-                    <div className='date'>2010 - 2014</div>
-                    <div className='name'>Kana Design Studio</div>
-                    <div className='subname'>UI / UX Specialist</div>
-                    <div className='text'>
-                      <p>
-                        Euismod vel bibendum ultrices, fringilla vel eros, donec
-                        euismod leo lectus.
-                      </p>
+                    <div className='date'>May 19, 2020</div>
+                    <div className='name'>Front End Development Libraries</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by freeCodeCamp </span>
+                      <i aria-hidden='true' className='fab fa-free-code-camp' />
                     </div>
+                    <a
+                      href='https://www.freecodecamp.org/certification/charles_abas/front-end-development-libraries'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
                   </div>
                   <div className='history-item'>
-                    <div className='date'>2009 - 2010</div>
-                    <div className='name'>Paperart</div>
-                    <div className='subname'>Graphic Designer</div>
-                    <div className='text'>
-                      <p>
-                        Euismod vel bibendum ultrices, fringilla vel eros, donec
-                        euismod leo lectus.
-                      </p>
+                    <div className='date'>May 11, 2018</div>
+                    <div className='name'>Android Development Bundle</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by Google </span>
+                      <i aria-hidden='true' className='fab fa-google' />
                     </div>
+                    <a
+                      href='https://drive.google.com/file/d/10uwIQy5f3uxc2sLZlc6Cim8Os8U65H65/view?usp=sharing'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
+                  </div>
+                  <div className='history-item'>
+                    <div className='date'>August 22, 2018</div>
+                    <div className='name'>Android Android Developer Course</div>
+                    <div
+                      className='subname'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                      }}
+                    >
+                      <span>Issued by Google </span>
+                      <i aria-hidden='true' className='fab fa-google' />
+                    </div>
+                    <a
+                      href='https://drive.google.com/file/d/10xmErZSyLcG-V7oKaRsXRknnHXsejWxq/view?usp=sharing'
+                      className='lnk'
+                    >
+                      view certificate
+                    </a>
                   </div>
                 </div>
               </div>
               <div className='clear' />
-              {/* Button CV */}
-              <a
-                target='_blank'
-                rel='noreferrer'
-                href='https://bslthemes.site/ober/wp-content/uploads/2021/12/Jacky-Smith-Resume.pdf'
-                className='btn'
-              >
-                <span>Download CV</span>
+              {/* Request for More */}
+              <a href='#contact-section' className='btn'>
+                <span>Request for more Certificates</span>
               </a>
             </div>
           </div>

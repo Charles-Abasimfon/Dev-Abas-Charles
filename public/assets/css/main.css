@@ -2144,6 +2144,21 @@ body.light-skin .header.sticky .navbar.default:before {
   font-weight: 700;
 }
 
+.p-title-gap {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  color: transparent;
+}
+
+@media only screen and (max-width: 580px) {
+  .p-title-gap {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 /**
 * Section Hero Started
 **/
