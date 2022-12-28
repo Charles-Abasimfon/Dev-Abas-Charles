@@ -641,7 +641,7 @@ const Index = () => {
       </section>
       <section
         className='section section-bg section-parallax section-parallax-5'
-        id='works-section'
+        id='projects-section'
       >
         <div className='container'>
           {/* Section Heading */}
