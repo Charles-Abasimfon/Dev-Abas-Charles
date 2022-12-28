@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
   const [contactData, setContactData] = useState({
@@ -8,6 +9,7 @@ const ContactForm = () => {
   });
   const [error, setError] = useState(false);
   const { name, email, message } = contactData;
+  const [sending, setSending] = useState(false);
 
   const onChange = (e) =>
     setContactData({ ...contactData, [e.target.name]: e.target.value });
@@ -18,6 +20,7 @@ const ContactForm = () => {
       setError(true);
     } else {
       setError(false);
+      setSending(true);
       const res = await fetch('/api/sendgrid', {
         body: JSON.stringify({
           email: email,
@@ -32,11 +35,41 @@ const ContactForm = () => {
 
       const response = await res.json();
 
-      console.log(response);
-
       const { error } = response;
+
       if (error) {
+        setSending(false);
+        toast('Something went wrong, please try again', {
+          type: 'error',
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
         console.log(error);
+        return;
+      } else {
+        setSending(false);
+        toast('Message sent successfully!, I will be in touch shortly', {
+          type: 'success',
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
+        setContactData({
+          name: '',
+          email: '',
+          message: '',
+        });
         return;
       }
     }
@@ -71,7 +104,7 @@ const ContactForm = () => {
                   />
                   {error && !name && (
                     <label id='name-error' className='error' htmlFor='name'>
-                      This field is required.
+                      Please enter your full name.
                     </label>
                   )}
                 </label>
@@ -86,7 +119,7 @@ const ContactForm = () => {
                   />
                   {error && !email && (
                     <label id='email-error' className='error' htmlFor='email'>
-                      This field is required.
+                      Please enter your email address.
                     </label>
                   )}
                 </label>
@@ -104,12 +137,18 @@ const ContactForm = () => {
                       className='error'
                       htmlFor='message'
                     >
-                      This field is required.
+                      Please enter your message.
                     </label>
                   )}
                 </label>
-                <a href='#' className='btn' onClick={(e) => onSubmit(e)}>
-                  <span>Submit</span>
+                <a
+                  href='#'
+                  className='btn'
+                  aria-disabled={sending}
+                  style={{ pointerEvents: sending ? 'none' : 'auto' }}
+                  onClick={(e) => onSubmit(e)}
+                >
+                  <span>{sending ? 'Sending...' : 'Send Message'}</span>
                 </a>
               </form>
             </div>

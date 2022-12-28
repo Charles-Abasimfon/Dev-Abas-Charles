@@ -249,7 +249,7 @@ const Header = ({ day, setDay }) => {
           <a
             target='_blank'
             rel='noreferrer'
-            href='mailto:devabascharles@gmail.com'
+            href='mailto:hello@devabascharles.com'
           >
             <img
               src='https://img.icons8.com/fluency/512/gmail.png'

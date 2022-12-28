@@ -5741,3 +5741,8 @@ body.light-skin .wc-block-product-search .wc-block-product-search__button {
 body.light-skin.single-portfolio .m-titles:before {
   background: var(--light-skin);
 }
+
+.Toastify__toast-body {
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
