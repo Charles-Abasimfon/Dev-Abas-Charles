@@ -21,7 +21,7 @@ const ContactForm = () => {
     } else {
       setError(false);
       setSending(true);
-      const res = await fetch('/api/sendgrid', {
+      const res = await fetch('/api/contact', {
         body: JSON.stringify({
           email: email,
           name: name,

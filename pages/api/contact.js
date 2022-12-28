@@ -1,14 +1,21 @@
-import sendgrid from '@sendgrid/mail';
+import nodemailer from 'nodemailer';
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+function sendEmail(req, res) {
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: process.env.EMAIL_HOST,
+    auth: {
+      user: process.env.EMAIL_SENDER,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+    secure: true,
+  });
 
-async function sendEmail(req, res) {
-  try {
-    await sendgrid.send({
-      to: 'devabascharles@gmail.com', // Your email where you'll receive emails
-      from: 'hello@devabascharles.com', // your website email address here
-      subject: `[Hello, New Contact Form Lead] : Dev Abas Charles`,
-      html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  const mailOptions = {
+    from: process.env.EMAIL_SENDER,
+    to: process.env.EMAIL_RECEIVER,
+    subject: `[Hello, New Contact Form Lead] : Dev Abas Charles`,
+    html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
         <meta charset="utf-8">
@@ -36,13 +43,16 @@ async function sendEmail(req, res) {
               </div>
       </body>
       </html>`,
-    });
-  } catch (error) {
-    console.log(error);
-    return res.status(error.statusCode || 500).json({ error: error.message });
-  }
+  };
 
-  return res.status(200).json({ error: '' });
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      return res.json({ error: true });
+    }
+    console.log(info);
+    return res.json({ done: true });
+  });
 }
 
 export default sendEmail;
