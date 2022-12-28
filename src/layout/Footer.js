@@ -62,7 +62,7 @@ const Footer = () => {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  href='mailto:devabascharles@gmail.com'
+                  href='mailto:hello@devabascharles.com'
                 >
                   <img
                     src='https://img.icons8.com/fluency/512/gmail.png'
@@ -73,6 +73,14 @@ const Footer = () => {
                     }}
                     alt='Abasimfon Charles | Send me an Email'
                   />
+                </a>
+                <br />
+                <a
+                  href='mailto:hello@devabascharles.com'
+                  style={{ fontSize: '16px', marginTop: '20px' }}
+                  className='lnk'
+                >
+                  hello@devabascharles.com
                 </a>
               </div>
             </div>

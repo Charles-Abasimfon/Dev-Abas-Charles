@@ -17,6 +17,7 @@
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.7",
     "react-skrollr": "^1.0.4",
+    "react-toastify": "^9.1.1",
     "skrollr": "^0.6.26",
     "swiper": "^8.4.3",
     "wowjs": "^1.1.3"

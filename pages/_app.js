@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import '../styles/globals.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -80,7 +82,8 @@ function MyApp({ Component, pageProps }) {
         <meta name='msapplication-TileColor' content='#2b5797' />
         <meta name='theme-color' content='#ffffff'></meta>
       </Head>
-      <Component {...pageProps} />{' '}
+      <Component {...pageProps} />
+      <ToastContainer />
     </Fragment>
   );
 }

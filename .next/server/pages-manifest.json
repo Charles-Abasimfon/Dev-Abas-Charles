@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/api/sendgrid": "pages/api/sendgrid.js",
   "/": "pages/index.js"
 }
