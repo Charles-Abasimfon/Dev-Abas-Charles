@@ -177,13 +177,13 @@ const Header = ({ day, setDay }) => {
                       </a>
                     </li>
                     <li className='menu-item'>
-                      <a href='/#works-section' onClick={() => linkClick()}>
-                        Works
+                      <a href='/#projects-section' onClick={() => linkClick()}>
+                        Projects
                       </a>
                     </li>
                     <li className='menu-item'>
                       <a href='/#contact-section' onClick={() => linkClick()}>
-                        Contact
+                        Contact Me
                       </a>
                     </li>
                   </ul>
