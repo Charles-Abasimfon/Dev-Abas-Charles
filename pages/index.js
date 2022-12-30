@@ -586,7 +586,9 @@ const Index = () => {
                   </div>
                   <div className='history-item'>
                     <div className='date'>May 11, 2018</div>
-                    <div className='name'>Android Development Bundle</div>
+                    <div className='name'>
+                      Google Android Development Bundle
+                    </div>
                     <div
                       className='subname'
                       style={{
@@ -608,7 +610,7 @@ const Index = () => {
                   </div>
                   <div className='history-item'>
                     <div className='date'>August 22, 2018</div>
-                    <div className='name'>Android Android Developer Course</div>
+                    <div className='name'>Google Android Developer Course</div>
                     <div
                       className='subname'
                       style={{
