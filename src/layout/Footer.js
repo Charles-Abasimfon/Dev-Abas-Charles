@@ -92,7 +92,7 @@ const Footer = () => {
             </div>
             <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4 align-right'>
               <div className='copyright-text'>
-                Handcrafted by <strong>me</strong>, with <strong>NextJS</strong>
+                I handcrafted this with <strong>NextJS</strong>
                 .
               </div>
             </div>
