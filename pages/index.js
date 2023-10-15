@@ -88,7 +88,7 @@ const Index = () => {
               <div className='description'>
                 <p>
                   I am an Expert Full-Stack Website & Mobile App Developer and
-                  Designer with over a decade of experience in designing and
+                  Designer with over 8 years of experience in designing and
                   developing outstanding production-ready websites, applications
                   and other software for clients from different backgrounds.
                 </p>
@@ -179,7 +179,7 @@ const Index = () => {
                   <strong>English</strong>
                 </li>
                 <li>
-                  Experience <strong>10+ Years</strong>
+                  Experience <strong>8+ Years</strong>
                 </li>
                 <li>
                   Availability <strong>More than 30 hrs/week </strong>
@@ -231,7 +231,7 @@ const Index = () => {
                   </p>
                   <p>
                     Since beginning my journey as a freelance FullStack
-                    Developer over 10 years ago, I've worked remotely for
+                    Developer over 8 years ago, I've worked remotely for
                     agencies, consulted for startups, and collaborated with
                     talented people to create websites, applications and other
                     software for both business and consumer use. I'm quietly
@@ -289,7 +289,7 @@ const Index = () => {
                   Bootstrap, Tailwind CSS, JSX, Typescript, etc.
                 </p>
                 <p>
-                  <strong>Backend:</strong> NodeJS, Express, Strapi CMS, Rest
+                  <strong>Backend:</strong> Python, NodeJS, Express, Strapi CMS, Rest
                   api, etc.
                 </p>
                 <p>
