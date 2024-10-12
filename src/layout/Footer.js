@@ -47,7 +47,7 @@ const Footer = () => {
                 <a
                   target='_blank'
                   rel='noreferrer'
-                  href='https://wa.me/qr/WZKPGKEETYXOJ1'
+                  href='https://wa.me/2348149069911'
                 >
                   <img
                     src='https://img.icons8.com/fluency/512/whatsapp.png'
@@ -92,8 +92,7 @@ const Footer = () => {
             </div>
             <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4 align-right'>
               <div className='copyright-text'>
-                I handcrafted this with <strong>NextJS</strong>
-                .
+                I handcrafted this with <strong>NextJS</strong>.
               </div>
             </div>
           </div>
